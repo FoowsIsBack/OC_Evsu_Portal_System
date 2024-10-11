@@ -51,7 +51,7 @@ def loading():
     \x1b[38:5:74m│                  \x1b[38:5:196mLOG IN EVSU STUDENT PORTAL                \x1b[38:5:74m│
     \x1b[38:5:74m├────────────────────────────────────────────────────────────┤
     \x1b[38:5:74m│                                                            │
-    \x1b[38:5:74m│           \x1b[38:5:195mPlease wait a minute Loading Screen\x1b[38:5:28m....           \x1b[38:5:74m│
+    \x1b[38:5:74m│           \x1b[38:5:195mPlease wait a minute Loading Screen\x1b[38:5:28m....          \x1b[38:5:74m│
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
     time.sleep(1)
@@ -105,7 +105,7 @@ def portal():
     \x1b[38:5:74m│                     \x1b[38:5:148m0\x1b[38:5:28m. \x1b[38:5:195mExit                                \x1b[38:5:74m│
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
-    choice = int(input("    x1b[38:5:195mChoice\x1b[38:5:28m:\x1b[38:5:148m "))
+    choice = int(input("    \x1b[38:5:195mChoice\x1b[38:5:28m:\x1b[38:5:148m "))
     clear()
 
     if choice == 1:
@@ -118,11 +118,11 @@ def portal():
         main()
 
 question = {
-        "    |  1. Who developed Python programming language?: ": "guido van rossum",
-        "    |  2. Who developed in HTML?: ": "tim berners lee",
-        "    |  3. Who developed C programming language?: ": "rennis ritchie",
-        "    |  4. Who developed C++ programming language?: ": "bjarne stroustrup",
-        "    |  5. Who developed in javascript?: ": "brendan eich"
+        "     \x1b[38:5:148m1\x1b[38:5:28m. \x1b[38:5:195mWho developed \x1b[38:5:196mPython \x1b[38:5:195mprogramming language?\x1b[38:5:28m:\x1b[38:5:148m ": "guido van rossum",
+        "     \x1b[38:5:148m2\x1b[38:5:28m. \x1b[38:5:195mWho developed \x1b[38:5:196min HTML\x1b[38:5:195m?\x1b[38:5:28m:\x1b[38:5:148m ": "tim berners lee",
+        "     \x1b[38:5:148m3\x1b[38:5:28m. \x1b[38:5:195mWho developed \x1b[38:5:196mC \x1b[38:5:195mprogramming language?\x1b[38:5:28m:\x1b[38:5:148m ": "rennis ritchie",
+        "     \x1b[38:5:148m4\x1b[38:5:28m. \x1b[38:5:195mWho developed \x1b[38:5:196mC++ \x1b[38:5:195mprogramming language?\x1b[38:5:28m:\x1b[38:5:148m ": "bjarne stroustrup",
+        "     \x1b[38:5:148m5\x1b[38:5:28m. \x1b[38:5:195mWho developed in \x1b[38:5:196mjavascript\x1b[38:5:195m?\x1b[38:5:28m:\x1b[38:5:148m ": "brendan eich"
     }
 
 def qa():
@@ -149,7 +149,7 @@ def tools():
     \x1b[38:5:74m│                \x1b[38:5:148m1\x1b[38:5:28m. \x1b[38:5:195mQuestion and Answer                      \x1b[38:5:74m│
     \x1b[38:5:74m│                \x1b[38:5:148m0\x1b[38:5:28m. \x1b[38:5:195mExit                                     \x1b[38:5:74m│
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
-    choice = int(input("    \x1b[38:5:195mChoice\x1b[38:5:28m\x1b[38:5:28m: "))
+    choice = int(input("    \x1b[38:5:195mChoice\x1b[38:5:28m\x1b[38:5:28m:\x1b[38:5:148m "))
     clear()
 
     if choice == 1:
@@ -185,18 +185,18 @@ def database():
     \x1b[38:5:74m│                   \x1b[38:5:196mEVSU REGISTER STUDENT                    \x1b[38:5:74m│
     \x1b[38:5:74m├────────────────────────────────────────────────────────────┤ 
     \x1b[38:5:74m│                                                            │
-    \x1b[38:5:74m│          \x1b[38:5:148m1\x1b[38:5:28m. \x1b[38:5:195mBS in Information Technology (BSIT)            \x1b[38:5:74m│
-    \x1b[38:5:74m│          \x1b[38:5:148m2\x1b[38:5:28m. \x1b[38:5:195mBS in Civil Engineering (BSCE)                 \x1b[38:5:74m│
-    \x1b[38:5:74m│          \x1b[38:5:148m3\x1b[38:5:28m. \x1b[38:5:195mBS in Mechanical Engineering (BSME)            \x1b[38:5:74m│
-    \x1b[38:5:74m│          \x1b[38:5:148m4\x1b[38:5:28m. \x1b[38:5:195mBS in Industrial Technology (Culinary Arts)    \x1b[38:5:74m│
-    \x1b[38:5:74m│          \x1b[38:5:148m5\x1b[38:5:28m. \x1b[38:5:195mBS in Industrial Technology (Electronics)      \x1b[38:5:74m│
+    \x1b[38:5:74m│          \x1b[38:5:148m1\x1b[38:5:28m. \x1b[38:5:195mBS in Information Technology (\x1b[38:5:148mBSIT\x1b[38:5:74m)            \x1b[38:5:74m│
+    \x1b[38:5:74m│          \x1b[38:5:148m2\x1b[38:5:28m. \x1b[38:5:195mBS in Civil Engineering (\x1b[38:5:148mBSCE\x1b[38:5:74m)                 \x1b[38:5:74m│
+    \x1b[38:5:74m│          \x1b[38:5:148m3\x1b[38:5:28m. \x1b[38:5:195mBS in Mechanical Engineering (\x1b[38:5:148mBSME\x1b[38:5:74m)            \x1b[38:5:74m│
+    \x1b[38:5:74m│          \x1b[38:5:148m4\x1b[38:5:28m. \x1b[38:5:195mBS in Industrial Technology (\x1b[38:5:148mCulinary Arts\x1b[38:5:74m)    \x1b[38:5:74m│
+    \x1b[38:5:74m│          \x1b[38:5:148m5\x1b[38:5:28m. \x1b[38:5:195mBS in Industrial Technology (\x1b[38:5:148mElectronics\x1b[38:5:74m)      \x1b[38:5:74m│
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
-    name1 = input("     Full Name: ")
-    age1 = input("     Age: ")
-    address = input("     Address: ")
-    email = input("     Email: ")
-    course_choice = int(input("     Course (1-5): "))
+    name1 = input("     \x1b[38:5:195mFull Name\x1b[38:5:28m:\x1b[38:5:148m ")
+    age1 = input("     \x1b[38:5:195mAge\x1b[38:5:28m:\x1b[38:5:148m ")
+    address = input("     \x1b[38:5:195mAddress\x1b[38:5:28m:\x1b[38:5:148m ")
+    email = input("     \x1b[38:5:195mEmail\x1b[38:5:28m:\x1b[38:5:148m ")
+    course_choice = int(input("     \x1b[38:5:195mCourse (\x1b[38:5:148m1\x1b[38:5:195m-\x1b[38:5:148m5\x1b[38:5:195m)\x1b[38:5:28m:\x1b[38:5:148m "))
     course = course[course_choice - 1]
     clear()
     qa()
@@ -431,9 +431,9 @@ def username():
     \x1b[38:5:74m╭────────────────────────────────────────────────────────────╮
     \x1b[38:5:74m│                  \x1b[38:5:196mMY ACCOUNT EVSU PORTAL                    \x1b[38:5:74m│
     \x1b[38:5:74m├────────────────────────────────────────────────────────────┤
-    \x1b[38:5:74m│                    \x1b[38:5:195mUsername\x1b[38:5:28m: \x1b[38:5:148m{user}                           
+    \x1b[38:5:74m│  \x1b[38:5:195mUsername\x1b[38:5:28m: \x1b[38:5:148m{user}                           
     \x1b[38:5:74m│                                                            │
-    \x1b[38:5:74m│                    \x1b[38:5:195mPassword\x1b[38:5:28m: \x1b[38:5:148m{passw}                          
+    \x1b[38:5:74m│  \x1b[38:5:195mPassword\x1b[38:5:28m: \x1b[38:5:148m{passw}                          
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m└────────────────────────────────────────────────────────────╯""")
         choice = input("    \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ")
