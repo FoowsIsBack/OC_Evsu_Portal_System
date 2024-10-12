@@ -74,8 +74,9 @@ def login():
     \x1b[38:5:74m╭────────────────────────────────────────────────────────────╮
     \x1b[38:5:74m│                  \x1b[38:5:196mLOG IN EVSU STUDENT PORTAL                \x1b[38:5:74m│
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
-    user1 = input("    \x1b[38:5:195mUsername\x1b[38:5:28m:\x1b[38:5:148m ")
-    passw1 = getpass.getpass("    \x1b[38:5:195mPassword\x1b[38:5:28m:\x1b[38:5:148m ")
+    user1 = input("     \x1b[38:5:195mUsername\x1b[38:5:28m:\x1b[38:5:148m ")
+    print()
+    passw1 = getpass.getpass("     \x1b[38:5:195mPassword\x1b[38:5:28m:\x1b[38:5:148m ")
     if user1 == user and passw == passw1:
         clear()
         loading()
@@ -89,7 +90,7 @@ def login():
     \x1b[38:5:74m│        \x1b[38:5:195mInvalid \x1b[38:5:196musername \x1b[38:5:195mor \x1b[38:5:196mpassword\x1b[38:5:28m. \x1b[38:5:195mPlease try again      \x1b[38:5:74m│
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
-        choice = input("    \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ")
+        choice = input("     \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ")
         clear()
         login()
 
@@ -100,12 +101,15 @@ def portal():
     \x1b[38:5:74m├────────────────────────────────────────────────────────────┤
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m│                     \x1b[38:5:148m1\x1b[38:5:28m. \x1b[38:5:195mQuiz                                \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                            \x1b[38:5:74m│
     \x1b[38:5:74m│                     \x1b[38:5:148m2\x1b[38:5:28m. \x1b[38:5:195mView Score                          \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                            \x1b[38:5:74m│
     \x1b[38:5:74m│                     \x1b[38:5:148m3\x1b[38:5:28m. \x1b[38:5:195mDataBase                            \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                            \x1b[38:5:74m│
     \x1b[38:5:74m│                     \x1b[38:5:148m0\x1b[38:5:28m. \x1b[38:5:195mExit                                \x1b[38:5:74m│
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
-    choice = int(input("    \x1b[38:5:195mChoice\x1b[38:5:28m:\x1b[38:5:148m "))
+    choice = int(input("     \x1b[38:5:195mChoice\x1b[38:5:28m:\x1b[38:5:148m "))
     clear()
 
     if choice == 1:
@@ -143,13 +147,15 @@ def qa():
 def tools():
     print(""" 
     \x1b[38:5:74m╭────────────────────────────────────────────────────────────╮
-    \x1b[38:5:74m│                   \x1b[38:5:196mQUIZ EVSU PORTAL                         \x1b[38:5:74m│
+    \x1b[38:5:74m│                      \x1b[38:5:196mQUIZ EVSU PORTAL                      \x1b[38:5:74m│
     \x1b[38:5:74m├────────────────────────────────────────────────────────────┤
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m│                \x1b[38:5:148m1\x1b[38:5:28m. \x1b[38:5:195mQuestion and Answer                      \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                            \x1b[38:5:74m│
     \x1b[38:5:74m│                \x1b[38:5:148m0\x1b[38:5:28m. \x1b[38:5:195mExit                                     \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
-    choice = int(input("    \x1b[38:5:195mChoice\x1b[38:5:28m\x1b[38:5:28m:\x1b[38:5:148m "))
+    choice = int(input("     \x1b[38:5:195mChoice\x1b[38:5:28m\x1b[38:5:28m:\x1b[38:5:148m "))
     clear()
 
     if choice == 1:
@@ -166,7 +172,7 @@ def viewscore():
     \x1b[38:5:74m├────────────────────────────────────────────────────────────┤
     \x1b[38:5:74m│                   \x1b[38:5:195mYour Score is\x1b[38:5:28m: \x1b[38:5:28m{score}                   
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
-    choice = input("    \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ")
+    choice = input("     \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ")
     clear()
     portal()
 
@@ -186,9 +192,13 @@ def database():
     \x1b[38:5:74m├────────────────────────────────────────────────────────────┤ 
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m│          \x1b[38:5:148m1\x1b[38:5:28m. \x1b[38:5:195mBS in Information Technology (\x1b[38:5:148mBSIT\x1b[38:5:74m)            \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                                                                                                \x1b[38:5:74m│
     \x1b[38:5:74m│          \x1b[38:5:148m2\x1b[38:5:28m. \x1b[38:5:195mBS in Civil Engineering (\x1b[38:5:148mBSCE\x1b[38:5:74m)                 \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                                                                                                \x1b[38:5:74m│
     \x1b[38:5:74m│          \x1b[38:5:148m3\x1b[38:5:28m. \x1b[38:5:195mBS in Mechanical Engineering (\x1b[38:5:148mBSME\x1b[38:5:74m)            \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                                                                                                \x1b[38:5:74m│
     \x1b[38:5:74m│          \x1b[38:5:148m4\x1b[38:5:28m. \x1b[38:5:195mBS in Industrial Technology (\x1b[38:5:148mCulinary Arts\x1b[38:5:74m)    \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                                                                                                \x1b[38:5:74m│
     \x1b[38:5:74m│          \x1b[38:5:148m5\x1b[38:5:28m. \x1b[38:5:195mBS in Industrial Technology (\x1b[38:5:148mElectronics\x1b[38:5:74m)      \x1b[38:5:74m│
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
@@ -202,11 +212,21 @@ def database():
     qa()
 
 def databasemain():
-    print(""" 
+    print(f""" 
     \x1b[38:5:74m╭────────────────────────────────────────────────────────────╮
     \x1b[38:5:74m│                   \x1b[38:5:196mEVSU STUDENT DATABASE                    \x1b[38:5:74m│
     \x1b[38:5:74m├────────────────────────────────────────────────────────────┤   
-    \x1b[38:5:74m│                                                            │
+    \x1b[38:5:74m│                                              
+    \x1b[38:5:74m│    Student Name:   {name1}      
+    \x1b[38:5:74m│
+    \x1b[38:5:74m│    Age:            {age1} 
+    \x1b[38:5:74m│
+    \x1b[38:5:74m│    Address:        {address}  
+    \x1b[38:5:74m│
+    \x1b[38:5:74m│    Email:          {email}  
+    \x1b[38:5:74m│
+    \x1b[38:5:74m│    Course:         {course}   
+    \x1b[38:5:74m│                                    
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
     choice = input("    \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ")
@@ -223,8 +243,9 @@ def signup():
     \x1b[38:5:74m│           \x1b[38:5:195mCreate a new account for \x1b[38:5:196mEVSU \x1b[38:5:74m\x1b[38:5:195mStudent            \x1b[38:5:195m│
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
-    user = input("    \x1b[38:5:195mUsername\x1b[38:5:28m:\x1b[38:5:148m ")
-    passw = getpass.getpass("    \x1b[38:5:195mPassword\x1b[38:5:28m:\x1b[38:5:148m ")
+    user = input("     \x1b[38:5:195mUsername\x1b[38:5:28m:\x1b[38:5:148m ")
+    print()
+    passw = getpass.getpass("     \x1b[38:5:195mPassword\x1b[38:5:28m:\x1b[38:5:148m ")
     clear()
     registerdone()
 
@@ -278,7 +299,7 @@ def registerdone():
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
         time.sleep(3)
-        choice = input("    \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ") 
+        choice = input("     \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ") 
         clear()
 
 def changepassdone():
@@ -331,7 +352,7 @@ def changepassdone():
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m└────────────────────────────────────────────────────────────╯""")
         time.sleep(2)
-        choice = input("    \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ") 
+        choice = input("     \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ") 
         clear()
 
 def changeuserdone():
@@ -384,7 +405,7 @@ def changeuserdone():
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m└────────────────────────────────────────────────────────────╯""")
         time.sleep(2)
-        choice = input("    \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ") 
+        choice = input("     \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ") 
         clear()
 
 def changeuser():
@@ -397,10 +418,12 @@ def changeuser():
     \x1b[38:5:74m│                \x1b[38:5:195mAccount Change \x1b[38:5:196mUsername                     \x1b[38:5:74m│
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m└────────────────────────────────────────────────────────────╯""")
-    olduser = input("    \x1b[38:5:195mCurrent Username\x1b[38:5:28m:\x1b[38:5:148m ")
+    olduser = input("     \x1b[38:5:195mCurrent Username\x1b[38:5:28m:\x1b[38:5:148m ")
+    print()
     if olduser == user:
-        newuser = input("    \x1b[38:5:195mNew Username\x1b[38:5:28m:\x1b[38:5:148m ")
-        newuser1 = input("    \x1b[38:5:195mConfirm New Username\x1b[38:5:28m:\x1b[38:5:148m ")
+        newuser = input("     \x1b[38:5:195mNew Username\x1b[38:5:28m:\x1b[38:5:148m ")
+        print()
+        newuser1 = input("     \x1b[38:5:195mConfirm New Username\x1b[38:5:28m:\x1b[38:5:148m ")
     if newuser == newuser1:
         user = newuser1
         clear()
@@ -416,10 +439,12 @@ def changepass():
     \x1b[38:5:74m│                \x1b[38:5:195mAccount Change \x1b[38:5:196mPassword                     \x1b[38:5:74m│
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m└────────────────────────────────────────────────────────────╯""")
-    oldpass = input("    \x1b[38:5:195mCurrent Password\x1b[38:5:148m:\x1b[38:5:148m ")
+    oldpass = input("     \x1b[38:5:195mCurrent Password\x1b[38:5:148m:\x1b[38:5:148m ")
+    print()
     if oldpass == passw:
-        newpass = getpass.getpass("    \x1b[38:5:195mNew Password\x1b[38:5:28m:\x1b[38:5:148m ")
-        newpass1 = getpass.getpass("    \x1b[38:5:195mConfirm New Password\x1b[38:5:28m:\x1b[38:5:148m ")
+        newpass = getpass.getpass("     \x1b[38:5:195mNew Password\x1b[38:5:28m:\x1b[38:5:148m ")
+        print()
+        newpass1 = getpass.getpass("     \x1b[38:5:195mConfirm New Password\x1b[38:5:28m:\x1b[38:5:148m ")
     if newpass == newpass1:
         passw = newpass1
         clear()
@@ -436,7 +461,7 @@ def username():
     \x1b[38:5:74m│  \x1b[38:5:195mPassword\x1b[38:5:28m: \x1b[38:5:148m{passw}                          
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m└────────────────────────────────────────────────────────────╯""")
-        choice = input("    \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ")
+        choice = input("     \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ")
         clear()
 
 def main():
@@ -446,14 +471,19 @@ def main():
     \x1b[38:5:74m├────────────────────────────────────────────────────────────┤
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m│                 \x1b[38:5:148m1\x1b[38:5:28m. \x1b[38:5:74m\x1b[38:5:195mLog in                                  \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                            \x1b[38:5:74m│
     \x1b[38:5:74m│                 \x1b[38:5:148m2\x1b[38:5:28m. \x1b[38:5:195mSign Up                                 \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                            \x1b[38:5:74m│
     \x1b[38:5:74m│                 \x1b[38:5:148m3\x1b[38:5:28m. \x1b[38:5:195mMy Account                              \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                            \x1b[38:5:74m│
     \x1b[38:5:74m│                 \x1b[38:5:148m4\x1b[38:5:28m. \x1b[38:5:195mChange Username                         \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                            \x1b[38:5:74m│
     \x1b[38:5:74m│                 \x1b[38:5:148m5\x1b[38:5:28m. \x1b[38:5:195mChange Password                         \x1b[38:5:74m│
+    \x1b[38:5:74m│                                                            \x1b[38:5:74m│
     \x1b[38:5:74m│                 \x1b[38:5:148m0\x1b[38:5:28m. \x1b[38:5:195mExit                                    \x1b[38:5:74m│
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m└────────────────────────────────────────────────────────────╯""")
-    choice = int(input("    \x1b[38:5:195mChoice\x1b[38:5:28m:\x1b[38:5:148m "))
+    choice = int(input("     \x1b[38:5:195mChoice\x1b[38:5:28m:\x1b[38:5:148m "))
     clear()
 
     if choice == 1:
