@@ -1,5 +1,5 @@
 # Evsu Portal System
-![image](https://github.com/user-attachments/assets/62368b6b-1b64-429d-a7c2-b330568cb250)
+![image](https://github.com/user-attachments/assets/57f2a18a-6d77-483c-9c3f-9a5df7ff5e9f)
 
 # Color List
 ```sh
