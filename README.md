@@ -15,3 +15,7 @@ git clone https://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@github.com/FoowsIsBac
 cd OC_Evsu_Portal_System
 python3 Evsu_System.py
 ```
+# OTP Google
+```sh
+KEY = KRSXG4TCA5KQ6D2E
+```
