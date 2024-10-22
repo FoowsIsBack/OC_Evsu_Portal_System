@@ -5,9 +5,14 @@
 #Sky Blue (Bg Color) = \x1b[38:5:74m
 #Green = \x1b[38:5:28m
 
+#How to run
+#1. source my_virtual_env/bin/activate.fish
+#2. python3 Evsu_System.py
+
 import os
 import time
 import getpass
+import pyotp
 
 def clear():
     if os.name == 'nt':  
@@ -521,6 +526,20 @@ def username():
     \x1b[38:5:74m└────────────────────────────────────────────────────────────╯""")
         choice = input("     \x1b[38:5:195mPress Enter to Go Back\x1b[38:5:28m:\x1b[38:5:148m ")
         clear()
+def start():
+    clear()
+    secret = "KRSXG4TCA5KQ6D2E"
+    totp = pyotp.TOTP(secret)
+    
+    otp = input("OTP from Google Authenticator: ")
+    if totp.verify(otp):
+        print("\x1b[38;2;0;255;58mWelcome to Evsu Portal")
+        time.sleep(3)
+        clear()
+        main()
+    else:
+        print("Invalid OTP!!")
+        quit(1)
 
 def main():
     print("""
@@ -566,4 +585,5 @@ def main():
         quit()
 
 while True:
+    start()
     main()
