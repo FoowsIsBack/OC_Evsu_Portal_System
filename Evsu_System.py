@@ -7,7 +7,7 @@
 
 #How to run
 #1. source my_virtual_env/bin/activate.fish
-#2. python3 Evsu_System.py
+#2. python /home/foows/coding/py/Evsu_System.py
 
 import os
 import time
@@ -132,7 +132,7 @@ def backtomain():
     \x1b[38:5:74m╭────────────────────────────────────────────────────────────╮
     \x1b[38:5:74m│                       \x1b[38:5:196mLOG OUT ACCOUNT\x1b[38:5:28m.....                 \x1b[38:5:74m│
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
-    time.sleep(1)
+    time.sleep(3)
     clear()
     main()
 
@@ -153,9 +153,9 @@ def logout():
     clear()
 
     if choice == 1:
-        main()
-    elif choice == 2:
         backtomain()
+    elif choice == 2:
+        main()
 
 def portal():
     print(""" 
@@ -280,15 +280,15 @@ def databasemain():
     \x1b[38:5:74m│                   \x1b[38:5:196mEVSU STUDENT DATABASE                    \x1b[38:5:74m│
     \x1b[38:5:74m├────────────────────────────────────────────────────────────┤   
     \x1b[38:5:74m│                                              
-    \x1b[38:5:74m│    Student Name:   {name1}      
+    \x1b[38:5:74m│    \x1b[38:5:195mStudent Name\x1b[38:5:28m:   \x1b[38:5:195m{name1}      
     \x1b[38:5:74m│
-    \x1b[38:5:74m│    Age:            {age1} 
+    \x1b[38:5:74m│    \x1b[38:5:195mAge\x1b[38:5:28m:            \x1b[38:5:195m{age1} 
     \x1b[38:5:74m│
-    \x1b[38:5:74m│    Address:        {address}  
+    \x1b[38:5:74m│    \x1b[38:5:195mAddress\x1b[38:5:28m:        \x1b[38:5:195m{address}  
     \x1b[38:5:74m│
-    \x1b[38:5:74m│    Email:          {email}  
+    \x1b[38:5:74m│    \x1b[38:5:195mEmail\x1b[38:5:28m:          \x1b[38:5:195m{email}  
     \x1b[38:5:74m│
-    \x1b[38:5:74m│    Course:         {course}   
+    \x1b[38:5:74m│    \x1b[38:5:195mCourse\x1b[38:5:28m:         \x1b[38:5:195m{course}   
     \x1b[38:5:74m│                                    
     \x1b[38:5:74m│                                                            │
     \x1b[38:5:74m╰────────────────────────────────────────────────────────────╯""")
