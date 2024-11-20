@@ -7,7 +7,7 @@
 
 #How to run
 #1. source my_virtual_env/bin/activate.fish
-#2. python /home/foows/coding/py/Evsu_System.py
+#2. python /NAMEPATH/NAMEPATH/NAMEPATH/NAMEPATH/Evsu_System.py
 
 import os
 import time
