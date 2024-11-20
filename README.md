@@ -11,7 +11,7 @@ Green4 = \x1b[38:5:28m
 ```
 # Install System
 ```sh
-git clone https://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@github.com/FoowsIsBack/OC_Evsu_Portal_System.git
+git clone https://github.com/FoowsIsBack/OC_Evsu_Portal_System.git
 cd OC_Evsu_Portal_System
 python3 Evsu_System.py
 ```
