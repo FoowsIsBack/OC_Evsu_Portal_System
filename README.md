@@ -17,5 +17,5 @@ python3 Evsu_System.py
 ```
 # OTP Google
 ```sh
-KEY = KRSXG4TCA5KQ6D2E
+GOOGLE AUTHENTICATOR KEY = KRSXG4TCA5KQ6D2E
 ```
